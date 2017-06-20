@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+	
+    <!-- GENERAL INFORMATION -->
+    <groupId>es.bsc.mobile</groupId>
+    <artifactId>framework</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+	
+    <!-- PROJECT INFORMATION -->
+    <name>Mobile COMP Superscalar</name>
+    <description>COMPSs version for mobile platforms</description>
+    <url>http://www.bsc.es</url>
+    
+    <inceptionYear>2014</inceptionYear>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
+    
+    <organization>
+        <name>BSC</name>
+        <url>http://www.bsc.es</url>
+    </organization>
+	
+    <!-- PROPERTIES -->
+    <properties>	
+        <junit.version>4.11</junit.version>
+		
+        <!-- Maven Plugins -->
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>		
+        <maven-shade-plugin.version>2.1</maven-shade-plugin.version>
+        <maven-resources-plugin.version>2.6</maven-resources-plugin.version>
+        <maven-war-plugin.version>2.1.1</maven-war-plugin.version>
+        <maven-jaxb2-plugin.version>0.8.0</maven-jaxb2-plugin.version>
+		
+        <!-- Project encoding -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+    
+    <!-- SUB-MODULES -->
+    <modules>
+        <module>comm</module>
+        <module>programmingModel</module>
+        <module>runtime</module>
+	<module>OpenCL</module>
+    </modules>
+</project>
+
