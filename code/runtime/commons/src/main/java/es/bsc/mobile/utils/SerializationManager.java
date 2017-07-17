@@ -149,7 +149,7 @@ public class SerializationManager {
 
         @Override
         public void perform() throws Exception {
-            String location = path.endsWith(File.pathSeparator) ? path : path + File.pathSeparator + dr.getName();
+            String location = (path.endsWith(File.separator) ? path : path + File.separator) + dr.getName();
             if (!dr.isOnFile()) {
                 byte[] serialized = dr.getArrayValue();
                 if (serialized != null) {

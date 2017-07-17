@@ -17,7 +17,7 @@ package es.bsc.mobile;
 
 public class Configuration {
 
-    private static String dataDir = "";
+    private static String dataDir = ".";
 
     public static void setDataDir(String dir) {
         dataDir = dir;
